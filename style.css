@@ -1,0 +1,96 @@
+:root {
+    --black: #1A1A1A;
+    --white: #FEFEFE;
+    --red: #ee3e2f;
+    --yellow: #fff100;
+    --green: #8dc63f;
+    --violet: #652d90;
+}
+
+@font-face {
+    font-family: 'Ampero';
+    src: url('./fonts/Ampero-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'NerdFonts';
+    src: url('./fonts/NerdFonts.ttf');
+}
+
+* {
+    color: var(--white);
+    line-height: 1.5;
+}
+
+.slidev-layout {
+    background-color: var(--black);
+}
+
+ul {
+    max-width: 550px;
+    margin-top: 20px;
+
+    li {
+        &::marker {
+            color: var(--green);
+        }
+    }
+}
+
+h1 {
+    font-family: 'Ampero';
+
+    &.main {
+        font-size: 100px !important;
+    }
+}
+
+h2 {
+    font-family: 'Ampero';
+    font-size: 2.5rem;
+}
+
+.sub {
+    position: relative;
+    bottom: 63px;
+    left: 42px;
+}
+
+.title {
+    color: var(--red);
+}
+
+.greentext {
+    color: var(--green);
+}
+
+.sideGTimg {
+    position: absolute;
+    right: 69px;
+    top: 69px;
+    height: 200px;
+}
+
+.gitflow {
+    position: absolute;
+    right: 60px;
+    bottom: 0px;
+    height: 500px;
+}
+
+p.decorations {
+    opacity: 0.2;
+    font-size: 10px;
+    line-height: 1;
+}
+
+.keyword {
+    color: var(--green);
+}
+
+span.icon {
+    font-size: 24px;
+    font-family: NerdFonts;
+    color: var(--green);
+    margin-right: 16px;
+}
