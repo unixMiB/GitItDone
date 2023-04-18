@@ -94,3 +94,9 @@ span.icon {
     color: var(--green);
     margin-right: 16px;
 }
+
+.slidev-code {
+    border-left: 2px solid var(--green);
+    border-radius: 0 !important;
+    padding-left: 16px !important;
+}

@@ -42,19 +42,19 @@ hideInToc: true
   <li>
     Linux:  
 ```bash
-  apt install git # (Ubuntu, Debian, Mint, etc.)
+apt install git # (Ubuntu, Debian, Mint, etc.)
 ```
 ```bash
-  pacman -S git # (Arch, Manjaro, etc.)
+pacman -S git # (Arch, Manjaro, etc.)
 ```
 ```bash
-  dnf install git # (Fedora, Red Hat, CentOS, etc.)
+dnf install git # (Fedora, Red Hat, CentOS, etc.)
 ```
   </li>
   <li>
     Mac: Dovrebbe essere già installato, altrimenti:
 ```bash
-  brew install git
+brew install git
 ```
   </li>
 </ul>
@@ -123,7 +123,7 @@ title: Parole chiave
     </li>
   <li>
     <span class="icon">󰜘</span>
-    <span class="keyword">Commit</span> - Un punto di riferimento per il codice
+    <span class="keyword">Commit</span> - Una fotografia dello stato del repository
   </li>
   <li>
     <span class="icon">󰘬</span>
@@ -143,5 +143,57 @@ title: Parole chiave
   </li>
 </ul>
 
+---
+transition: slide-left
+title: Setup
+---
 
+<h1 class="title">Setup</h1>
 
+```bash
+git config --global user.name "Nespoli"                 # Imposta il nome utente
+git config --global user.email "nespoli.bt@gmail.com"   # Imposta l'email
+
+cat ~/.gitconfig                                        # Visualizza la configurazione
+```
+
+<br>
+
+```log
+commit 5dfe56d725bd8a217bba02838b273cdfa563f6ee
+Author: NespoliBT <nespoli.bt@gmail.com>
+Date:   Sat Apr 15 15:09:20 2023 +0200
+
+:tada: First commit
+```
+
+---
+transition: slide-left
+title: Un esempio pratico
+---
+
+<h1 class="title">Un esempio pratico</h1>
+
+```bash
+mkdir the_game         # Crea la cartella
+cd the_game            # Entra nella cartella
+
+git init               # Inizializza la repository
+
+touch trucchi_gta.md   # Crea un file
+```
+
+```md
+<!-- trucchi_gta.md -->
+
+# Trucchi GTA
+
+- Vita, Armatura e Soldi: R1, R2, L1, X, ←, ↓, →, ↑, ←, ↓, →, ↑ 
+- Fai esplodere tutti i veicoli: RT, LT, RB, LB, LT, RT, X, Y, B, Y, LT, LB
+```
+
+```bash
+git status                      # Visualizza lo stato della repository
+git add trucchi_gta.md          # Aggiungi il file alla repository
+git commit -m "Add cheatsheet"  # Crea un commit
+```
