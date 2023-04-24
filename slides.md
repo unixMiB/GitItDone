@@ -52,7 +52,7 @@ dnf install git # (Fedora, Red Hat, CentOS, etc.)
 ```
   </li>
   <li>
-    Mac: Dovrebbe essere già installato, altrimenti:
+    Mac: gia presente, altrimenti:
 ```bash
 brew install git
 ```
@@ -87,6 +87,19 @@ title: Cos'è Git?
 <!--
 Note
 -->
+---
+transition: slide-left
+title: Funzioni
+---
+
+<h1 class="title">Funzioni</h1>
+<ul>
+  <li>Universi paralleli</li>
+  <li>Tracciamento delle modifiche</li>
+  <li>Standardizzazione del processo di sviluppo (git flow)</li>
+</ul>
+
+
 ---
 transition: slide-left
 title: Come nasce Git?
@@ -169,10 +182,10 @@ Date:   Sat Apr 15 15:09:20 2023 +0200
 
 ---
 transition: slide-left
-title: Un esempio pratico
+title: Demo
 ---
 
-<h1 class="title">Un esempio pratico</h1>
+<h1 class="title">Demo</h1>
 
 ```bash
 mkdir the_game         # Crea la cartella
@@ -193,7 +206,107 @@ touch trucchi_gta.md   # Crea un file
 ```
 
 ```bash
-git status                      # Visualizza lo stato della repository
-git add trucchi_gta.md          # Aggiungi il file alla repository
-git commit -m "Add cheatsheet"  # Crea un commit
+git status                           # Visualizza lo stato della repository
+git add trucchi_gta.md               # Aggiungi il file alla repository
+git commit -m "Aggiunto cheatsheet"  # Crea un commit
+```
+
+---
+transition: slide-left
+title: Merge
+---
+
+<h1 class="title">Branch</h1>
+
+```bash
+git checkout -b simone   # Crea un nuovo branch e si sposta su di esso
+
+# ! Funziona anche:
+# git branch simone
+# git checkout simone
+```
+  
+```md
+<!-- trucchi_gta.md -->
+# Trucchi GTA 6
+
+- Vita, Armatura e Soldi: R1, R2, L1, X, ←, ↓, →, ↑, ←, ↓, →, ↑
+- Fai esplodere tutti i veicoli: RT, LT, RB, LB, LT, RT, X, Y, B, Y, LT, LB
+- Aumenta il livello di ricercato: R1, R1, CERCHIO, R2, ←, →, ←, →, ←, →
+```
+
+```bash
+git add .
+git commit -m "Specificata versione GTA"
+```
+
+---
+transition: slide-left
+title: Merge
+---
+
+<h1 class="title">Merge</h1>
+
+```bash
+git checkout main
+```
+
+```md
+<!-- trucchi_gta.md -->
+# Trucchi GTA San Andreas
+
+- Vita, Armatura e Soldi: R1, R2, L1, X, ←, ↓, →, ↑, ←, ↓, →, ↑
+- Fai esplodere tutti i veicoli: RT, LT, RB, LB, LT, RT, X, Y, B, Y, LT, LB
+```
+
+```bash
+git add .
+git commit -m "Cambiato titolo"
+
+git merge simone
+```
+
+---
+transition: slide-left
+title: Conflitti
+---
+
+<h1 class="title">Conflitti</h1>
+
+```md
+<!-- trucchi_gta.md -->
+
+<<<<<<< HEAD
+# Trucchi GTA San Andreas
+=======
+# Trucchi GTA 6
+>>>>>>> simone
+
+- Vita, Armatura e Soldi: R1, R2, L1, X, ←, ↓, →, ↑, ←, ↓, →, ↑
+- Fai esplodere tutti i veicoli: RT, LT, RB, LB, LT, RT, X, Y, B, Y, LT, LB
+- Aumenta il livello di ricercato: R1, R1, CERCHIO, R2, ←, →, ←, →, ←, →
+```
+
+```bash
+git add .
+git commit -m "Risolto conflitto con simone"
+```
+
+---
+transition: slide-left
+title: Push e Pull
+---
+
+<h1 class="title">Push e Pull</h1>
+
+```bash
+git remote add origin git@github.com:NespoliBT/the_game.git
+git push -u origin main
+```
+
+... Qualcuno modifica il file remoto ...
+  
+```bash
+git fetch
+git pull origin main
 ```
