@@ -1,6 +1,7 @@
 ---
 transition: slide-left
 titleTemplate: "Git It Done - unixMiB"
+favicon: /img/favicon.png
 ---
 
 <h1 class="main"><span class="title">git</span> it done</h1>
