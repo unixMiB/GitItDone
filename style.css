@@ -99,4 +99,5 @@ span.icon {
     border-left: 2px solid var(--green);
     border-radius: 0 !important;
     padding-left: 16px !important;
+    background: #1b1b1b1b !important;
 }

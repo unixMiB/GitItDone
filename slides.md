@@ -52,7 +52,7 @@ dnf install git # (Fedora, Red Hat, CentOS, etc.)
 ```
   </li>
   <li>
-    Mac: gia presente, altrimenti:
+    Mac: già presente, altrimenti:
 ```bash
 brew install git
 ```
