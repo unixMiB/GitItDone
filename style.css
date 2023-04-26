@@ -106,9 +106,53 @@ span.icon {
     background: #1b1b1b1b !important;
 }
 
-.qrcode {
-    height: 400px;
-    aspect-ratio: 1/1;
-    width: 100%;
-    object-fit: contain;
+.qrcode-container {
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+
+    .title {
+        text-align: center;
+    }
+
+    .qrcode-form {
+        height: 200px;
+        aspect-ratio: 1/1;
+        object-fit: contain;
+
+    }
+}
+
+.penguin-army {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+
+    .title {
+        text-align: center;
+    }
+    .qrcode {
+        height: 300px;
+    }
+}
+
+.link-slide {
+    opacity: 0.7;
+    font-size: 12px;
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
+}
+
+
+.logo {
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+    height: 75px;
+}
+
+.end {
+    color: black !important;
 }

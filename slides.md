@@ -60,6 +60,12 @@ brew install git
   </li>
 </ul>
 
+<a href="https://git-it-done.unixmib.org" class="link-slide">
+  git-it-done.unixmib.org
+</a>
+
+<img src="/img/logo.png" class="logo">
+
 ---
 transition: slide-left
 title: Indice
@@ -68,6 +74,12 @@ hideInToc: true
 <h1 class="title">Indice</h1>
 
 <Toc></Toc>
+
+<a href="https://git-it-done.unixmib.org" class="link-slide">
+  git-it-done.unixmib.org
+</a>
+
+<img src="/img/logo.png" class="logo">
 
 ---
 transition: slide-left
@@ -85,9 +97,11 @@ title: Cos'è Git?
   <li>"Goddam idiotic truckload of sh*t": quando si rompe</li>
 </ul>
 
-<!--
-Note
--->
+<a href="https://git-it-done.unixmib.org" class="link-slide">
+  git-it-done.unixmib.org
+</a>
+
+<img src="/img/logo.png" class="logo">
 ---
 transition: slide-left
 title: Funzioni
@@ -100,7 +114,11 @@ title: Funzioni
   <li>Standardizzazione del processo di sviluppo (git flow)</li>
 </ul>
 
+<a href="https://git-it-done.unixmib.org" class="link-slide">
+  git-it-done.unixmib.org
+</a>
 
+<img src="/img/logo.png" class="logo">
 ---
 transition: slide-left
 title: Come nasce Git?
@@ -123,7 +141,11 @@ title: Come nasce Git?
 </div>
 
 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs.libertaddigital.com%2Ffotos%2Fnoticias%2F300%2F300%2Flinus-torvalds-240709.jpg&f=1&nofb=1&ipt=ef5318910254c5def33716404066f74bc23f973da6c3bd8929a685a8f4ff49ea&ipo=images" alt="Linus Torvalds" class="sideGTimg"/>
+<a href="https://git-it-done.unixmib.org" class="link-slide">
+  git-it-done.unixmib.org
+</a>
 
+<img src="/img/logo.png" class="logo">
 ---
 transition: slide-left
 title: Parole chiave
@@ -148,6 +170,10 @@ title: Parole chiave
     <span class="keyword">Merge</span> - Unire due branch
   </li>
   <li>
+    <span class="icon"></span>
+    <span class="keyword">Remote</span> - Un repository remoto
+  </li>
+  <li>
     <span class="icon"></span>
     <span class="keyword">Pull</span> - Scaricare le modifiche da un repository remoto
   </li>
@@ -156,7 +182,11 @@ title: Parole chiave
     <span class="keyword">Push</span> - Caricare le modifiche su un repository remoto
   </li>
 </ul>
+<a href="https://git-it-done.unixmib.org" class="link-slide">
+  git-it-done.unixmib.org
+</a>
 
+<img src="/img/logo.png" class="logo">
 ---
 transition: slide-left
 title: Setup
@@ -180,7 +210,11 @@ Date:   Sat Apr 15 15:09:20 2023 +0200
 
 :tada: First commit
 ```
+<a href="https://git-it-done.unixmib.org" class="link-slide">
+  git-it-done.unixmib.org
+</a>
 
+<img src="/img/logo.png" class="logo">
 ---
 transition: slide-left
 title: Demo
@@ -211,7 +245,11 @@ git status                           # Visualizza lo stato della repository
 git add trucchi_gta.md               # Aggiungi il file alla repository
 git commit -m "Aggiunto cheatsheet"  # Crea un commit
 ```
+<a href="https://git-it-done.unixmib.org" class="link-slide">
+  git-it-done.unixmib.org
+</a>
 
+<img src="/img/logo.png" class="logo">
 ---
 transition: slide-left
 title: Branch
@@ -240,7 +278,11 @@ git checkout -b simone   # Crea un nuovo branch e si sposta su di esso
 git add .
 git commit -m "Specificata versione GTA"
 ```
+<a href="https://git-it-done.unixmib.org" class="link-slide">
+  git-it-done.unixmib.org
+</a>
 
+<img src="/img/logo.png" class="logo">
 ---
 transition: slide-left
 title: Merge
@@ -266,7 +308,11 @@ git commit -m "Cambiato titolo"
 
 git merge simone
 ```
+<a href="https://git-it-done.unixmib.org" class="link-slide">
+  git-it-done.unixmib.org
+</a>
 
+<img src="/img/logo.png" class="logo">
 ---
 transition: slide-left
 title: Conflitti
@@ -292,7 +338,11 @@ title: Conflitti
 git add .
 git commit -m "Risolto conflitto con simone"
 ```
+<a href="https://git-it-done.unixmib.org" class="link-slide">
+  git-it-done.unixmib.org
+</a>
 
+<img src="/img/logo.png" class="logo">
 ---
 transition: slide-left
 title: Push e Pull
@@ -311,7 +361,11 @@ git push -u origin main
 git fetch               # Sincronizza le modifiche remote
 git pull origin main    # Scarica le modifiche remote
 ```
+<a href="https://git-it-done.unixmib.org" class="link-slide">
+  git-it-done.unixmib.org
+</a>
 
+<img src="/img/logo.png" class="logo">
 ---
 transition: slide-left
 title: Link Utili
@@ -341,11 +395,28 @@ title: Link Utili
     </a>
   </li>
 </ul>
+<div class="qrcode-container">
+  <h1 class="title">Unisciti a noi!</h1>
+  <img src="/img/form.png" class="qrcode-form"/>
+</div>
+
+<a href="https://git-it-done.unixmib.org" class="link-slide">
+  git-it-done.unixmib.org
+</a>
 ---
 transition: slide-left
-title: Join the penguin army
+title: Join the penguin army!
 ---
 
-<h1 class="title center">Join the penguin army</h1>
+<h1 class="title center">Join the penguin army!</h1>
 
-<img src="/img/qrcode.png" class="qrcode"/>
+<div class="penguin-army">
+  <div class="army-container">
+    <h1 class="title">Telegram</h1>
+    <img src="/img/telegram.png" class="qrcode"/>
+  </div>
+  <div class="army-container">
+    <h1 class="title">Instagram</h1>
+    <img src="/img/instagram.png" class="qrcode"/>
+  </div>
+</div>
