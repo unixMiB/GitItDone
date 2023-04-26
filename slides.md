@@ -1,5 +1,6 @@
 ---
 transition: slide-left
+titleTemplate: "Git It Done - unixMiB"
 ---
 
 <h1 class="main"><span class="title">git</span> it done</h1>
@@ -213,7 +214,7 @@ git commit -m "Aggiunto cheatsheet"  # Crea un commit
 
 ---
 transition: slide-left
-title: Merge
+title: Branch
 ---
 
 <h1 class="title">Branch</h1>
@@ -307,6 +308,44 @@ git push -u origin main
 ... Qualcuno modifica il file remoto ...
   
 ```bash
-git fetch
-git pull origin main
+git fetch               # Sincronizza le modifiche remote
+git pull origin main    # Scarica le modifiche remote
 ```
+
+---
+transition: slide-left
+title: Link Utili
+---
+
+<h1 class="title">Link Utili</h1>
+
+<ul>
+  <li>
+    <a href="https://rogerdudler.github.io/git-guide/">
+      https://rogerdudler.github.io/git-guide/
+    </a>
+  </li>
+  <li>
+    <a href="https://training.github.com/downloads/github-git-cheat-sheet.pdf">
+      https://training.github.com/downloads/github-git-cheat-sheet.pdf
+    </a>
+  </li>
+  <li>
+    <a href="https://learngitbranching.js.org/">
+      https://learngitbranching.js.org/
+    </a>
+  </li>
+  <li>
+    <a href="https://ohmygit.org/">
+      https://ohmygit.org/
+    </a>
+  </li>
+</ul>
+---
+transition: slide-left
+title: Join the penguin army
+---
+
+<h1 class="title center">Join the penguin army</h1>
+
+<img src="/img/qrcode.png" class="qrcode"/>
