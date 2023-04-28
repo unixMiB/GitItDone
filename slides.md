@@ -396,20 +396,6 @@ title: Link Utili
     </a>
   </li>
 </ul>
-<div class="qrcode-container">
-  <h1 class="title">Unisciti a noi!</h1>
-  <img src="/img/form.png" class="qrcode-form"/>
-</div>
-
-<a href="https://git-it-done.unixmib.org" class="link-slide">
-  git-it-done.unixmib.org
-</a>
----
-transition: slide-left
-title: Join the penguin army!
----
-
-<h1 class="title center">Join the penguin army!</h1>
 
 <div class="penguin-army">
   <div class="army-container">
@@ -420,4 +406,11 @@ title: Join the penguin army!
     <h1 class="title">Instagram</h1>
     <img src="/img/instagram.png" class="qrcode"/>
   </div>
+  <div class="army-container">
+    <h1 class="title">Tesserati</h1>
+    <img src="/img/form.png" class="qrcode"/>
+  </div>
 </div>
+<a href="https://git-it-done.unixmib.org" class="link-slide">
+  git-it-done.unixmib.org
+</a>
