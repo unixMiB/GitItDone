@@ -196,7 +196,7 @@ title: Setup
 <h1 class="title">Setup</h1>
 
 ```bash
-git config --global user.name "Nespoli"                 # Imposta il nome utente
+git config --global user.name "NespoliBT"               # Imposta il nome utente
 git config --global user.email "nespoli.bt@gmail.com"   # Imposta l'email
 
 cat ~/.gitconfig                                        # Visualizza la configurazione
